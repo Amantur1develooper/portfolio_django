@@ -273,21 +273,24 @@
         </h3>
 
         <div class="d__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rerum beatae in quia vel qui.</div>
-        <div>
+    <div data-aos="fade-up"
+     data-aos-duration="3000">
+
         <form action="formMessage/" method="POST">
             {% csrf_token %}
             <input type="email" placeholder="Email" name="email">
             <br>
             <br>
-            <input type="text" placeholder="Phone number" name="phone_name">
+            <input type="text" placeholder="Phone number" name="phone_number">
              <br>
              <br>
             <textarea name="message" cols="30" rows="5" placeholder="Message"></textarea>
-        </from>
+        
         <br>
         <br>
         <button type="submit" class="btn bth--red btn--long">Send</button>
-        </div>
+        </form>
+    
         {% comment %} <a name="contact"></a> {% endcomment %}
         {% comment %} <a class="btn bth--red btn--long"  target="_blank" href="https://wa.me/+996558212040">Call me</a> {% endcomment %}
     </div>

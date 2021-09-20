@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import index
-
+from main.views import index,formMessage
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index,name='index')
+    path('',index,name='index'),
+    path('formMessage/',formMessage, name='formMessage' )
 ]
